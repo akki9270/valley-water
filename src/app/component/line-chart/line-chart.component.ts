@@ -33,8 +33,8 @@ export class LineChartComponent implements OnInit, AfterViewInit {
       this.loadChart();
   }
   loadChart() {
-    console.log(this.chartCategories);
-   console.log(this.chartDiv.nativeElement);
+    // console.log(this.chartCategories);
+  //  console.log(this.chartDiv.nativeElement);
    let that = this;
     this.chartCategories.forEach( (cat: any) => {
       if (cat.axisLeft) {
@@ -53,7 +53,7 @@ export class LineChartComponent implements OnInit, AfterViewInit {
 
    let containerWidth = $(this.chartDiv.nativeElement).innerWidth();
    let containerHeight = $(this.chartDiv.nativeElement).innerHeight() || 300;
-   console.log(containerWidth, containerHeight)
+  //  console.log(containerWidth, containerHeight)
     var svg = d3.select("#" + this.chartId).append("svg")
       .attr("width", containerWidth)
       .attr("height", containerHeight)

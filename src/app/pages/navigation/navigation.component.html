@@ -11,8 +11,8 @@
   <div class="navigation">
     <nav>
       <ul #list>
-        <li>
-          <a [routerLink]="['']" class="selected" (click)="onNavigationClick($event)">Home</a>
+        <li [routerLink]="['']" (click)="onNavigationClick(Home)">
+          <a [routerLink]="['']" #Home class="selected" (click)="onNavigationClick($event)">Home</a>
   
         </li>
         <li class="dropdown">
@@ -29,7 +29,7 @@
             <a href="#" (click)="onNavigationClick(DA)">Request Access</a>
             <a href="#" (click)="onNavigationClick(DA)">Data Catalog</a>
             <a href="#" (click)="onNavigationClick(DA)">Explore Data</a>
-            <a href="#" (click)="onNavigationClick(DA)">Import Data</a>
+            <a [routerLink]="['/import-data']" (click)="onNavigationClick(DA)">Import Data</a>
             <a href="#" (click)="onNavigationClick(DA)">Data Governance</a>
             <a href="#" (click)="onNavigationClick(DA)">Create alert for anamoly detection</a>
           </div>

@@ -7,6 +7,7 @@ import { NavigationComponent } from './pages/navigation/navigation.component';
 import { LineChartComponent } from './component/line-chart/line-chart.component';
 import { ViewReportsComponent } from './pages/view-reports/view-reports.component';
 import { LoginComponent } from './pages/login/login.component';
+import { ImportDataComponent } from './pages/data-access/import-data/import-data.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LoginComponent } from './pages/login/login.component';
     NavigationComponent,
     LineChartComponent,
     ViewReportsComponent,
-    LoginComponent
+    LoginComponent,
+    ImportDataComponent
   ],
   imports: [
     BrowserModule,

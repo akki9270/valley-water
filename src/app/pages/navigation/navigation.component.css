@@ -54,6 +54,10 @@ nav ul li {
     transition: all 0.4s ease-in-out;
 }
 
+ nav ul li:focus {
+     outline: none;
+ }
+
 nav ul li:hover {
     background-color: rgba(0,0,0,0.3);
 }
