@@ -1,10 +1,114 @@
-.comming-soon {
+/*  */
+
+.sect {
+    height: 75vh;
+    background: url('/assets/valley_background_1.jpg');
+    background-size: cover;
+}
+
+.form-control {
+    font-size: 1.6rem;
+}
+/* body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #60a3bc !important;
+} */
+form {
+    width: 60%;
+}
+.user_card.image {
+    background-color: white;
+    padding: 0;
+}
+.user_card.image img {
+    background-size: cover;
+    height: 100%;
+}
+.user_card.form {
     background: white;
+    padding: 0;
+}
+.user_card {
+    height: 50rem;
+    width: 45rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #f39c12;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 60vh;
-    font-size: 2.6rem;
-    text-transform: uppercase;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+
+}
+.brand_logo_container {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 10px;
+    border-radius: 50%;
+    /* background: #60a3bc; */
+    background: #eee;
+    padding: 10px;
+    text-align: center;
+}
+.brand_logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.form_container {
+    margin-top: 100px;
+}
+.login_btn {
+    width: 100%;
+    background: var(--color-title) !important;
+    color: white !important;
+    font-size: 2rem;
+}
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.login_container {
+    padding: 0 2rem;
+}
+.input-group-text {
+    background: var(--color-title) !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+    font-size: 1.6rem;
+}
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.custom-control-label {
+    padding-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+.custom-control-label::before {
+    width: 2rem;
+    height: 2rem;
+}
+.custom-control-label::after {
+    width: 2rem;
+    height: 2rem;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: var(--color-title) !important;
 }
