@@ -1,0 +1,10 @@
+.comming-soon {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}

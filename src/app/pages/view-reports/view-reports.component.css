@@ -1,0 +1,28 @@
+.view-reports {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    font-size: 1.8rem;
+    
+}
+form small {
+    font-size: 1.6rem;
+    color: var(--gray);
+}
+.form-control-sm {
+    font-size: 1.6rem;
+}
+.section{
+    display: flex;
+    flex: 1;
+    padding: 1rem 2rem;
+    min-height: 40rem;
+}
+.section__filter {
+    flex: 0.3;
+}
+.section__chart {
+    flex: 0.7;
+}

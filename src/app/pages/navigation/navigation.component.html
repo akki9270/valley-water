@@ -1,0 +1,61 @@
+<div class="nav-title">
+  <div class="brand">
+    <img src="assets/valley_water.jpg" width="100" alt="valley water">
+  </div>
+  <div class="nav-title__text">
+    Data Portal
+    <p class="m-0">Create, View and Analysis Data</p>
+  </div>
+</div>
+<div class="navigation">
+  <nav>
+    <ul #list>
+      <li>
+        <a [routerLink]="['']" class="selected" (click)="onNavigationClick($event)">Home</a>
+
+      </li>
+      <li class="dropdown">
+        <a class="dropbtn" #Reports (click)="onNavigationClick($event)">Reports</a>
+        <div class="dropdown-content">
+          <a [routerLink]="['/view-reports']" (click)="onNavigationClick(Reports)">View Reports</a>
+          <a href="#">Build Report</a>
+          <a href="#">Auto Generated Anomaly Report</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="dropbtn" #DA (click)="onNavigationClick($event)">Data Access</a>
+        <div class="dropdown-content">
+          <a href="#" (click)="onNavigationClick(DA)">Request Access</a>
+          <a href="#" (click)="onNavigationClick(DA)">Data Catalog</a>
+          <a href="#" (click)="onNavigationClick(DA)">Explore Data</a>
+          <a href="#" (click)="onNavigationClick(DA)">Import Data</a>
+          <a href="#" (click)="onNavigationClick(DA)">Data Governance</a>
+          <a href="#" (click)="onNavigationClick(DA)">Create alert for anamoly detection</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="dropbtn" (click)="onNavigationClick($event)">Administration</a>
+        <div class="dropdown-content">
+          <a href="#">Database Access</a>
+          <a href="#"> Application Access</a>
+          <a href="">Configuration</a>
+          <a href="">Maintenance</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="dropbtn" (click)="onNavigationClick($event)">Support</a>
+        <div class="dropdown-content">
+          <a href="#">Request Access</a>
+          <a href="#">Documentation</a>
+          <a href="#">Video</a>
+          <a href="#">Create Support Ticket</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="user-detail">
+    Kimberley Linser
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,22 @@
+<div class="view-reports">
+  <div class="section">
+    <div class="section__filter">
+      <h2 class="text-center">Stream Gage Data</h2>
+      <hr>
+      <form action="">
+        <small class="mb-3 d-block">Note: Select Station and date renge to view plot</small>
+        <div class="form-group">
+          <label for="stNum">Station Number</label>
+          <input type="text" class="form-control form-control-sm" placeholder="Station Number" />
+        </div>
+        <div class="form-group">
+          <label for="stNum">Date</label>
+          <input type="date" class="form-control form-control-sm" placeholder="Date" />
+        </div>
+      </form>
+    </div>
+    <div class="section__chart">
+      <app-line-chart></app-line-chart>
+    </div>
+  </div>
+</div>
