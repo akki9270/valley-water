@@ -4,6 +4,8 @@
     height: 75vh;
     background: url('/assets/valley_background_1.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .form-control {

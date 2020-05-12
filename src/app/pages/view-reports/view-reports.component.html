@@ -16,7 +16,38 @@
       </form>
     </div>
     <div class="section__chart">
-      <app-line-chart></app-line-chart>
+      <app-line-chart id="chart1" 
+      [chartData]="StreamGage.chartData"
+      [title]="StreamGage.chartTitle" [category]="StreamGage.categories"></app-line-chart>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <div class="section__filter">
+      <h2 class="text-center">Reservior Gage Data</h2>
+      <hr>
+      <form action="">
+        <small class="mb-3 d-block">Note: Select Station and date renge to view plot</small>
+        <div class="form-group">
+          <label for="stNum">Station Number</label>
+          <input type="text" class="form-control form-control-sm" placeholder="Station Number" />
+        </div>
+        <div class="form-group">
+          <label for="stNum">Elevation</label>
+          <input type="text" class="form-control form-control-sm" placeholder="Elevation" />
+        </div>
+        <div class="form-group">
+          <label for="stNum">Date</label>
+          <input type="date" class="form-control form-control-sm" placeholder="Date" />
+        </div>
+      </form>
+    </div>
+    <div class="section__chart">
+      <app-line-chart id="chart2" [title]="ReservoirGage.chartTitle"
+      [chartData]="ReservoirGage.chartData"
+      [category]="ReservoirGage.categories"></app-line-chart>
     </div>
   </div>
 </div>

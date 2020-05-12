@@ -1,3 +1,16 @@
+.header-content {
+    height: 150px;
+}
+
+.page-content {
+    position: absolute;
+    top: 190px;
+    left: 0;
+    right:0px;
+    bottom:0px;
+    overflow-y: auto;   
+}
+
 .nav-title {
     display: flex;
     align-items: center;
