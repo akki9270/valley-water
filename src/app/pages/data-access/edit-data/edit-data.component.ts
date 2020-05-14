@@ -11,10 +11,11 @@ export class EditDataComponent implements OnInit {
 
   constructor() { }
   activeIds: string[] = ['custom-panel-3'];
+  startDate;
+  endDate;
 
   ngOnInit() {
   }
-
   panelHeaderClick(id: string) {
     if (id) {
       if (this.activeIds.includes(id)) {

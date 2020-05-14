@@ -50,7 +50,7 @@ export class DateTimePickerComponent implements ControlValueAccessor, OnInit, Af
     private onTouched: () => void = noop;
     private onChange: (_: any) => void = noop;
 
-    private ngControl: NgControl;
+    ngControl: NgControl;
 
     @Output() onCalendarOpen = new EventEmitter<any>();
     @Output() onCalendarClose = new EventEmitter<any>();
