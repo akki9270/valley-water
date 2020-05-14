@@ -19,17 +19,21 @@ export class NavigationComponent implements OnInit {
       let linkEle = $(data).find('a');
       $(linkEle).removeClass('selected');
     });
+    var ele;
     if (event.target) {
-      $(event.target).addClass('selected');
+      ele = event.target
     } else if (event) {
-      $(event).addClass('selected');
+      ele = event
     }
-
-
+    $(ele).addClass('selected');
+    $(ele).parent().removeClass('dropdown');
+    setTimeout(() => {
+      $(ele).parent().addClass('dropdown');
+    }, 500)
   }
 
   ngOnInit() {
-    this.logDates();
+    // this.logDates();
   }
 
   logDates() {

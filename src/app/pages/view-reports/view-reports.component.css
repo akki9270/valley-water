@@ -8,21 +8,21 @@ app-view-reports {
     flex-direction: column;
 }
 form label {
-    font-size: 1.8rem;
+    font-size: 1.125rem;
     
 }
 form small {
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: var(--gray);
 }
 .form-control-sm {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 .section{
     display: flex;
     flex: 1;
-    padding: 1rem 2rem;
-    min-height: 40rem;
+    padding: 0.625rem 1.25rem;
+    min-height: 25rem;
 }
 .section__filter {
     flex: 0.3;

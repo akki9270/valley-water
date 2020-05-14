@@ -10,9 +10,12 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 100%;
 }
 
+/* ngb-datepicker { */
+    /* font-size: 10%; */
+/* } */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;

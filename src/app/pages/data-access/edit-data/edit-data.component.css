@@ -1,0 +1,48 @@
+.info-block {
+    font-size: 1rem;
+    color: white;
+    padding: 0.625rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin: 1.25rem 2.5rem;
+}
+
+label {
+    font-size: 1rem;
+}
+
+.data-block {
+    display: flex;
+    margin-left: 2.5rem;
+    /* justify-content: space-around; */
+}
+.data-block__dropdown select{
+    width: 200px;
+    font-size: 1rem;
+    margin-left: 1.875rem;
+}
+
+table tr td:first-child {
+    text-align: right;
+}
+table tr td {
+    padding: 0.3125rem 0.625rem;
+}
+.data-block__daterange {
+    margin-left: 3.75rem;
+    display: flex;
+}
+
+.data-block__daterange label {
+    margin-right: 1.25rem;
+}
+
+.accordion--block {
+    margin: 0.625rem 2.5rem;
+}
+
+::ng-deep .card-header {
+    background-color: var(--cyan);
+    color: white;
+}

@@ -1,0 +1,107 @@
+<div class="bg-info info-block">
+  <i class="fa fa-info-circle"></i> You can choose one of two editing modes: 'Edit all Data in Points'. You can only edit Data from raw channels, and any edits will be saved in new calculated channels so that the raw channel is left unmodified as backup.
+</div>
+
+<div class="data-block">
+  <div class="data-block__dropdown">
+    <table>
+      <tr>
+        <td>
+          <label for="stie">Site:</label>
+        </td>
+        <td>
+          <select name="" id="site">
+            <option value="demo_climate_ca">Demo Climate CA</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="channel">Channel: </label>
+        </td>
+        <td>
+          <select name="" id="channel">
+            <option value="temprature">Temprature</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="data-block__daterange">
+    <table>
+      <tr>
+        <td>
+          <label for="activeStartDate">Start Date:</label>
+        </td>
+        <td>
+          <app-date-time-picker 
+          (onCalendarOpen)="onCalendarOpen()"
+          (onCalendarClose)="onCalendarClose()"
+          placement="right" [(ngModel)]="startDate" name="activeStartDate"></app-date-time-picker>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="activeEndDate">End Date:</label>
+        </td>
+        <td>
+          <app-date-time-picker 
+          (onCalendarOpen)="onCalendarOpen()"
+          (onCalendarClose)="onCalendarClose()"
+          [(ngModel)]="endDate" name="activeEndDate"></app-date-time-picker>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="accordion--block">
+  <ngb-accordion #a="ngbAccordion" [activeIds]="activeIds">
+    <ngb-panel id="custom-panel-1">
+      <ng-template ngbPanelHeader >
+        <div ngbPanelToggle 
+        (click)="panelHeaderClick('custom-panel-1')"
+        class="d-flex align-items-center justify-content-between">
+          <h5 class="m-0"> <i class="fa fa-plus"></i>  Fill / Replace Date</h5>
+          <!-- <button ngbPanelToggle class="btn btn-link p-0">Toggle first</button> -->
+        </div>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        data 
+      </ng-template>
+    </ngb-panel>
+
+    <ngb-panel id="custom-panel-2">
+      <ng-template ngbPanelHeader >
+        <div class="d-flex align-items-center justify-content-between" (click)="panelHeaderClick('custom-panel-2')">
+          <h5 class="m-0"> <i class="fa fa-plus"></i>  Scale / Offset Data</h5>
+          <!-- <button ngbPanelToggle class="btn btn-link p-0">Toggle first</button> -->
+        </div>
+      </ng-template>
+      <ng-template ngbPanelContent>
+      </ng-template>
+    </ngb-panel>
+
+    <ngb-panel id="custom-panel-3">
+      <ng-template ngbPanelHeader >
+        <div class="d-flex align-items-center justify-content-between" (click)="panelHeaderClick('custom-panel-3')">
+          <h5 class="m-0"> <i class="fa fa-plus"></i>  Linear Ramp Data</h5>
+          <!-- <button ngbPanelToggle class="btn btn-link p-0">Toggle first</button> -->
+        </div>
+      </ng-template>
+      <ng-template ngbPanelContent>
+      </ng-template>
+    </ngb-panel>
+
+    <ngb-panel id="custom-panel-4">
+      <ng-template ngbPanelHeader >
+        <div class="d-flex align-items-center justify-content-between" (click)="panelHeaderClick('custom-panel-4')">
+          <h5 class="m-0"> <i class="fa fa-plus"></i>  Add Note</h5>
+          <!-- <button ngbPanelToggle class="btn btn-link p-0">Toggle first</button> -->
+        </div>
+      </ng-template>
+      <ng-template ngbPanelContent>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+</div>

@@ -14,8 +14,8 @@
 .nav-title {
     display: flex;
     align-items: center;
-    font-size: 4rem;
-    padding: 2rem 4rem;
+    font-size: 2.5rem;
+    padding: 1.25rem 2.5rem;
     text-transform: uppercase;
     font-weight: 400;
     /* height: 10rem; */
@@ -27,30 +27,30 @@
     text-align: center;
 }
 .nav-title__text p {
-    font-size: 1.6rem;
+    font-size: 1rem;
     letter-spacing: 2px;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    padding: auto 2rem;
+    padding: auto 1.25rem;
     border-bottom: 0.5px solid rgba(0,0,0,0.3);
     background-color: rgba(0,0,0,0.1);
-    padding: 1rem 0.5rem;
+    padding: 0.625rem 0.3125rem;
 }
 nav {
-    padding-left: 4rem;
+    padding-left: 2.5rem;
 }
 nav ul {
     margin-bottom: 0;
 }
 nav ul li {
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     display: inline;
-    padding: 1rem 3rem;
+    padding: 0.625rem 1.875rem;
     transition: all 0.4s ease-in-out;
 }
 
@@ -71,7 +71,7 @@ nav ul li a:visited {
 }
 
 nav ul li:not(:first-child) {
-    padding-left: 3rem;
+    padding-left: 1.875rem;
 }
 
 nav ul li a.selected {
@@ -100,8 +100,8 @@ nav ul li a:hover {
 }
 
 .user-detail {
-    font-size: 2rem;
-    padding-right: 6rem;
+    font-size: 1.25rem;
+    padding-right: 3.75rem;
 }
 
 /* Navigation Popover Menu Start */
@@ -126,7 +126,7 @@ nav ul li a:hover {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     left: 0;
-    top: 4.5rem;
+    top: 2.8125rem;
     /* margin-left: 3rem; */
   }
   

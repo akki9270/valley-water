@@ -4,6 +4,7 @@ import { NavigationComponent } from './pages/navigation/navigation.component';
 import { ViewReportsComponent } from './pages/view-reports/view-reports.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ImportDataComponent } from './pages/data-access/import-data/import-data.component';
+import { EditDataComponent } from './pages/data-access/edit-data/edit-data.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,10 @@ const routes: Routes = [
       {
         path: 'import-data',
         component: ImportDataComponent
+      },
+      {
+        path: 'edit-data',
+        component: EditDataComponent
       }
     ]
   },

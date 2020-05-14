@@ -77,7 +77,7 @@ export class LineChartComponent implements OnInit, AfterViewInit {
       .attr("y", (margin.left / 2 ))
       .attr("x",0 - (height / 2))
       .attr("dy", "1em")
-      .style("font-size", "1.2rem")
+      .style("font-size", "0.75rem")
       .style("text-anchor", "middle")
       .text(this.yLableLeft);
       
@@ -86,7 +86,7 @@ export class LineChartComponent implements OnInit, AfterViewInit {
         .attr("y", 0 - (containerWidth - (margin.left / 2)))
         .attr("x", (height / 2))
         .attr("dy", "1em")
-        .style("font-size", "1.2rem")
+        .style("font-size", "0.75rem")
         .style("text-anchor", "middle")
         .text(this.yLableRight);  
 
