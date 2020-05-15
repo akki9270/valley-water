@@ -16,6 +16,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library as fontLibrary } from '@fortawesome/fontawesome-svg-core';
 import { faCalendar,  faClock } from '@fortawesome/free-regular-svg-icons';
+import { BuildReportComponent } from './pages/reports/build-report/build-report.component';
+import { UsgsComponent } from './pages/reports/usgs/usgs.component';
 
 fontLibrary.add(
   faCalendar,
@@ -31,7 +33,9 @@ fontLibrary.add(
     LoginComponent,
     ImportDataComponent,
     EditDataComponent,
-    DateTimePickerComponent
+    DateTimePickerComponent,
+    BuildReportComponent,
+    UsgsComponent
   ],
   imports: [
     BrowserModule,

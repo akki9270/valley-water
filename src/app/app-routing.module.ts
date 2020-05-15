@@ -5,6 +5,8 @@ import { ViewReportsComponent } from './pages/view-reports/view-reports.componen
 import { LoginComponent } from './pages/login/login.component';
 import { ImportDataComponent } from './pages/data-access/import-data/import-data.component';
 import { EditDataComponent } from './pages/data-access/edit-data/edit-data.component';
+import { BuildReportComponent } from './pages/reports/build-report/build-report.component';
+import { UsgsComponent } from './pages/reports/usgs/usgs.component';
 
 
 const routes: Routes = [
@@ -28,6 +30,14 @@ const routes: Routes = [
       {
         path: 'edit-data',
         component: EditDataComponent
+      },
+      {
+        path: 'build-reports',
+        component: BuildReportComponent
+      },
+      {
+        path: 'usgs',
+        component: UsgsComponent
       }
     ]
   },

@@ -19,8 +19,9 @@
           <a class="dropbtn" #Reports (click)="onNavigationClick($event)">Reports</a>
           <div class="dropdown-content">
             <a [routerLink]="['/view-reports']" (click)="onNavigationClick(Reports)">View Reports</a>
-            <a href="#">Build Report</a>
+            <a [routerLink]="['/build-reports']" (click)="onNavigationClick(Reports)" href="#">Build Report</a>
             <a href="#">Auto Generated Anomaly Report</a>
+            <a [routerLink]="['/usgs']" href="#">USGS Stage-Didscharge Ratings.</a>
           </div>
         </li>
         <li class="dropdown">
@@ -42,6 +43,7 @@
             <a href="#"> Application Access</a>
             <a href="">Configuration</a>
             <a href="">Maintenance</a>
+            <a href="">Manage Assets</a>
           </div>
         </li>
         <li class="dropdown">
